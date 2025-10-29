@@ -1,4 +1,9 @@
 package ma.mundiapolis.mundiapolisspringmvc.repository;
 
-public class ProductRepository {
+import ma.mundiapolis.mundiapolisspringmvc.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long>
+{
+
 }
