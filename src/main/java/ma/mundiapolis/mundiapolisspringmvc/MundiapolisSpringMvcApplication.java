@@ -12,7 +12,8 @@ import org.springframework.context.annotation.Bean;
 
 
 
-@SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
+//@SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
+@SpringBootApplication
 public class MundiapolisSpringMvcApplication {
 
     public static void main(String[] args) {
