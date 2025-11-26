@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
-    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-    <script src="/webjars/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.6/css/bootstrap.min.css">
+    <script src="/webjars/bootstrap/5.3.6/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
 <div class="mb-3">
     <label class="form-label">Name</label>
-    <input class="form-contorl" type="text" name="name" th:value="${product.name}">
+    <input class="form-control" type="text" name="name" th:value="${product.name}">
     <span class="text-danger" th:errors="${product.name}"></span>
 </div>
 
@@ -25,7 +25,7 @@
 
     <div class="mb-3">
         <label class="form-label">Price</label>
-        <input class="form-contorl" type="text" name="name" th:value="${product.price}">
+        <input class="form-control" type="text" name="name" th:value="${product.price}">
         <span class="text-danger" th:errors="${product.price}"></span>
     </div>
 
@@ -33,9 +33,16 @@
 
     <div class="mb-3">
         <label class="form-label">Quantity</label>
-        <input class="form-contorl" type="text" name="quantity" th:value="${product.quantity}">
+        <input class="form-control" type="text" name="quantity" th:value="${product.quantity}">
         <span class="text-danger" th:errors="${product.quantity}"></span>
     </div>
+
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+
+
 
 
 
