@@ -27,6 +27,16 @@ public class ProductController {
         return "products";
     }
 
+
+
+    @GetMapping("/admin/products")
+    @PreAuthorize("hasRole('ADMIN')")
+    public String adminProducts(Model model) {
+        model.addAttribute("productList", productRepository.findAll());
+        return "products";
+    }
+
+    
     @GetMapping("/")
     public String home() {
         return "redirect:/user/index";
